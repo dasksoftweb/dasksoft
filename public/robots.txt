@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.dasksoft.com
+
+# Sitemaps
+Sitemap: https://www.dasksoft.com/sitemap.xml
