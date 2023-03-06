@@ -8,6 +8,7 @@ import {
 } from "@heroicons/react/24/solid";
 
 import img from "../public/datascienceweb.webp"
+import Link from "next/link";
 
 const cloudsecurity = () => {
   const features = [
@@ -156,14 +157,14 @@ const cloudsecurity = () => {
         <div className="max-w-2xl mx-auto text-center py-14 px-4  sm:px-6 lg:px-8">
           
           <p className="mt-4 text-lg leading-6 text-white">
-          Unlock the power of your data with Dasksoft's expert data science solutions. Our highly skilled data scientists combine cutting-edge technology and specialized expertise to extract meaningful insights from your data. We use advanced analytics, AI, and machine learning to help you make informed decisions and gain a competitive edge.
+          Unlock the power of your data with Dasksoft expert data science solutions. Our highly skilled data scientists combine cutting-edge technology and specialized expertise to extract meaningful insights from your data. We use advanced analytics, AI, and machine learning to help you make informed decisions and gain a competitive edge.
           </p>
-          <a
+          <Link
             href="/#contact"
             className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-black bg-white hover:bg-indigo-50 sm:w-auto"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
       {/* section2 ends */}

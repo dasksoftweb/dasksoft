@@ -9,6 +9,7 @@ import {
   ShareIcon,
   ShieldCheckIcon
 } from "@heroicons/react/24/solid";
+import Link from "next/link";
 
 const cloudc = () => {
   const features = [
@@ -20,7 +21,7 @@ const cloudc = () => {
     {
       name: "Platform as a Service (PaaS)",
       description:
-        "PaaS provides users with a complete development environment, including tools and frameworks, to build, test, and deploy their applications. Users don't have to worry about managing the underlying infrastructure, as the platform takes care of it.",
+        "PaaS provides users with a complete development environment, including tools and frameworks, to build, test, and deploy their applications. Users dont have to worry about managing the underlying infrastructure, as the platform takes care of it.",
     },
     {
       name: "Software as a Service (SaaS)",
@@ -132,14 +133,14 @@ const cloudc = () => {
         <div className="max-w-2xl mx-auto text-center  px-4 py-14 sm:px-6 lg:px-8">
           
           <p className="mt-4 text-lg leading-6 text-white">
-          Are you looking to move your business to the cloud? Dasksoft's expert resources in Cloud Computing can help you do just that. Our team of professionals will assess your business requirements and guide you through the process of selecting the right cloud services that best suit your needs.
+          Are you looking to move your business to the cloud? Dasksoft expert resources in Cloud Computing can help you do just that. Our team of professionals will assess your business requirements and guide you through the process of selecting the right cloud services that best suit your needs.
           </p>
-          <a
+          <Link
             href="/#contact"
             className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-black bg-white hover:bg-indigo-50 sm:w-auto"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
       {/* section2 ends */}

@@ -10,6 +10,7 @@ import {
   ChatBubbleLeftRightIcon
 } from "@heroicons/react/24/solid";
 import img from "../public/cybersecuweb.webp"
+import Link from "next/link";
 
 const cybersecurity = () => {
   const features2 = [
@@ -96,14 +97,14 @@ const cybersecurity = () => {
         <div className="max-w-2xl mx-auto text-center py-14 px-4  sm:px-6 lg:px-8">
           
           <p className="mt-4 text-lg leading-6 text-white">
-          Protecting your organization's digital assets from cyber attacks is crucial in today's world. Dasksoft's expert cyber security team can help you assess and mitigate the risks to your business. Our team of certified professionals can work with you to develop a comprehensive security plan tailored to your specific needs.
+          Protecting your organizations digital assets from cyber attacks is crucial in todays world. Dasksoft expert cyber security team can help you assess and mitigate the risks to your business. Our team of certified professionals can work with you to develop a comprehensive security plan tailored to your specific needs.
           </p>
-          <a
+          <Link
             href="/#contact"
             className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-black bg-white hover:bg-indigo-50 sm:w-auto"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
       {/* section2 ends */}

@@ -13,6 +13,7 @@ import {
 } from "@heroicons/react/24/solid";
 
 import img from "../public/sdlcweb.webp"
+import Link from "next/link";
 
 const sdlc = () => {
   const features = [
@@ -270,14 +271,14 @@ const sdlc = () => {
         <div className="max-w-2xl mx-auto text-center  px-4 py-14 sm:px-6 lg:px-8">
           
           <p className="mt-4 text-lg leading-6 text-white">
-          Transform your software development process with Dasksoft's expert resources in SDLC. Our team of skilled professionals follows a structured approach to ensure that your software project is developed, maintained, and enhanced to meet your specific needs.
+          Transform your software development process with Dasksoft expert resources in SDLC. Our team of skilled professionals follows a structured approach to ensure that your software project is developed, maintained, and enhanced to meet your specific needs.
           </p>
-          <a
+          <Link
             href="/#contact"
             className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-black bg-white hover:bg-indigo-50 sm:w-auto"
           >
             Contact Us
-          </a>
+          </Link>
           
         </div>
       </div>
