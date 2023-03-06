@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState, useRef, useEffect } from "react";
 import Transition from "../utils/Transition";
 import Accordion from "./Accordion";
@@ -5,21 +6,25 @@ import Accordion from "./Accordion";
 const featureData = [
   {
     title: "Software Development Life Cycle",
+    link:"/sdlc",
     content:
       "SDLC is a process followed for a software project development and management. The process involves detailing of a project plan describing how to develop, maintain, replace and alter, or enhance specific software developed during a project. The life cycle defines a methodology for following and improving the quality of software and the overall development process.",
   },
   {
     title: "Cloud Computing",
+    link:"/cloudc",
     content:
       "Cloud computing is the on-demand delivery of Information Technology resources over the Internet with pay-as-you-go pricing. With these services businesses no longer need to buy, own, and maintain physical data centers and servers, services such as computing power, storage, and databases can be accessed remotely on an as-needed basis.",
   },
   {
     title: "Cyber Security",
+    link:"/cybersecurity",
     content:
       "Cyber security is the application of technologies, processes, and controls to protect systems, networks, programs, devices and data from cyber attacks. It aims to reduce the risk of cyber attacks and protect against the unauthorised exploitation of systems, networks, and technologies.",
   },
   {
     title: "Data Science",
+    link:"/datascience",
     content:
       "Data science is a study that combines math and statistics, specialized programming, advanced analytics, artificial intelligence (AI), and machine learning with specific subject matter expertise to uncover actionable insights hidden in a large data set. These insights guide in decision making and strategic planning.",
   },
@@ -194,15 +199,18 @@ function Features() {
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
                 >
-                  <div className="relative inline-flex flex-col">
-                    <p className="bg-primary text-lg text-white py-16 px-10 mt-20 shadow-lg rounded-lg backdrop-blur-lg text-left">
-                      SDLC is a process followed for a software project, within
-                      a software organization. It consists of a detailed plan
-                      describing how to develop, maintain, replace and alter or
-                      enhance specific software. The life cycle defines a
-                      methodology for improving the quality of software and the
-                      overall development process.
-                    </p>
+                  <div className="relative inline-flex flex-col ">
+                    <div className="bg-primary text-lg text-white py-16 px-10 mt-20 shadow-lg rounded-lg backdrop-blur-lg text-left">
+                      <p>
+                        SDLC is a process followed for a software project,
+                        within a software organization. It consists of a
+                        detailed plan describing how to develop, maintain,
+                        replace and alter or enhance specific software. The life
+                        cycle defines a methodology for improving the quality of
+                        software and the overall development process.
+                      </p>
+                      <button className="mt-2 p-2 rounded-md text-base bg-white text-black"><Link href="/sdlc">Read More</Link></button>
+                    </div>
                   </div>
                 </Transition>
                 {/* Item 2 */}
@@ -218,7 +226,8 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <p className="bg-primary text-lg text-white py-16 px-10 mt-20 shadow-lg rounded-lg backdrop-blur-lg text-left">
+                    <div className="bg-primary text-lg text-white py-16 px-10 mt-20 shadow-lg rounded-lg backdrop-blur-lg text-left">
+                    <p >
                       Cloud computing is the on-demand delivery of Information
                       Technology resources over the Internet with pay-as-you-go
                       pricing. With these services businesses no longer need to
@@ -226,6 +235,8 @@ function Features() {
                       services such as computing power, storage, and databases
                       can be accessed remotely on an as-needed basis.
                     </p>
+                    <button className="mt-2 p-2 rounded-md text-base bg-white text-black"><Link href="/cloudc">Read More</Link></button>
+                  </div>
                   </div>
                 </Transition>
                 {/* Item 3 */}
@@ -241,7 +252,8 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <p className="bg-primary text-lg text-white py-16 px-10 mt-20 shadow-lg rounded-lg backdrop-blur-lg text-left">
+                    <div className="bg-primary text-lg text-white py-16 px-10 mt-20 shadow-lg rounded-lg backdrop-blur-lg text-left">
+                    <p >
                       Cyber security is the application of technologies,
                       processes, and controls to protect systems, networks,
                       programs, devices and data from cyber attacks. It aims to
@@ -249,6 +261,8 @@ function Features() {
                       unauthorised exploitation of systems, networks, and
                       technologies.
                     </p>
+                    <button className="mt-2 p-2 rounded-md text-base bg-white text-black"><Link href="/cybersecurity">Read More</Link></button>
+                    </div>
                   </div>
                 </Transition>
                 {/* Item 4 */}
@@ -264,7 +278,8 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <p className="bg-primary text-lg text-white py-16 px-10 mt-20 shadow-lg rounded-lg backdrop-blur-lg text-left">
+                    <div className="bg-primary text-lg text-white py-16 px-10 mt-20 shadow-lg rounded-lg backdrop-blur-lg text-left">
+                    <p>
                       Data science combines math and statistics, specialized
                       programming, advanced analytics, artificial intelligence
                       (AI), and machine learning with specific subject matter
@@ -272,6 +287,8 @@ function Features() {
                       organization’s data. These insights can be used to guide
                       decision making and strategic planning.
                     </p>
+                    <button className="mt-2 p-2 rounded-md text-base bg-white text-black"><Link href="/datascience">Read More</Link></button>
+                    </div>
                   </div>
                 </Transition>
               </div>
@@ -284,6 +301,7 @@ function Features() {
                 key={val.title}
                 title={val.title}
                 content={val.content}
+                link={val.link}
               />
             ))}
           </div>

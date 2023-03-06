@@ -9,7 +9,11 @@ module.exports = {
       colors: {
         primary: "#0068FF",
         secondary: "#494948",
+        
       },
+      scale: {
+        '-100': '-1',
+      }
     },
   },
   plugins: [

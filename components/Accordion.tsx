@@ -1,11 +1,13 @@
+import Link from "next/dist/client/link";
 import React, { useState } from "react";
 
 interface Props {
   content: React.ReactNode;
   title: string | [];
+  link: string;
 }
 
-function Accordion({ title, content }: Props) {
+function Accordion({ title, content , link }: Props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -40,7 +42,8 @@ function Accordion({ title, content }: Props) {
                 }
                 bg-white shadow-lg w-full rounded-b-lg overflow-hidden`}
         >
-          <div className="p-4">{content}</div>
+          <div className="p-4">{content}   <span className="block mt-3"> <Link href={link} className="text-primary">Read More.</Link> </span></div>
+         
         </div>
       </div>
     </>

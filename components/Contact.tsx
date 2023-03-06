@@ -1,4 +1,4 @@
-import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
+import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
@@ -238,7 +238,7 @@ export default function Contact() {
                   <span className="sr-only">Email</span>
                 </dt>
                 <dd className="flex text-base text-indigo-50">
-                  <MailIcon
+                  <EnvelopeIcon
                     className="flex-shrink-0 w-6 h-6 text-indigo-200"
                     aria-hidden="true"
                   />
