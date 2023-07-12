@@ -8,6 +8,8 @@ import Dasksoft from "../../public/assets/Dasksoft.svg";
 // @ts-ignore
 import withReactContent from "sweetalert2-react-content";
 import { useRouter } from "next/router";
+import Head from "next/head";
+
 const MySwal = withReactContent(Swal);
 
 const Jobs = ({ data }: { data: any }) => {
@@ -27,6 +29,19 @@ const Jobs = ({ data }: { data: any }) => {
   }, [query]);
   return (
     <div className="relative mx-auto sm:w-full w-full pb-4">
+         <Head>
+        <title>{'DaskSoft - Job.'}</title>
+        <link
+          rel="DaskSoft"
+          href={`/jobs`}
+        />
+         <meta
+            name="description"
+            content={
+              "Over the years, we've built a culture of service, teamwork, and innovation. With an exceptional staff we are proud that people choose to build their careers with us."
+            }
+          />
+        </Head>
       <div className="max-w-7xl mx-auto">
         {data?.length > 0 ? (
           <>

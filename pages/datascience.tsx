@@ -9,7 +9,7 @@ import {
 
 import img from "../public/datascienceweb.webp"
 import Link from "next/link";
-
+import Head from "next/dist/shared/lib/head";
 const cloudsecurity = () => {
   const features = [
     {
@@ -73,6 +73,31 @@ const cloudsecurity = () => {
 
   return (
     <div className="">
+       <Head>
+        <title>{'Dasksoft - Data Science'}</title>
+        <link
+          rel="canonical"
+          href={`${process.env.NEXT_PUBLIC_SITE_URL}/datascience`}
+        />
+        {/* OG Tags */}
+        <meta property="og:type" content="Home" />
+        <meta property="og:title" content={"Dasksoft - Data Science"} />
+        <meta property="og:description" content={"Data science is a multidisciplinary field that involves the use of statistical and computational methods to extract insights and knowledge from data. Data science is used to solve complex problems, make data-driven decisions, and drive innovation in a wide range of industries, including finance, healthcare, marketing, and technology."} />
+        <meta property="og:image" content={"../public/datascienceweb.webp"} />
+        <meta
+          property="og:url"
+          content={`${process.env.NEXT_PUBLIC_SITE_URL}/datascience`}
+        />
+         {/*Twitter */}
+        <meta name="twitter:card" content="summary" />
+        <meta property="twitter:title" content={"Dasksoft - Data Science"} />
+        <meta property="twitter:description" content={'Data science is a multidisciplinary field that involves the use of statistical and computational methods to extract insights and knowledge from data. Data science is used to solve complex problems, make data-driven decisions, and drive innovation in a wide range of industries, including finance, healthcare, marketing, and technology.'} />
+        <meta property="twitter:image" content={"../public/datascienceweb.webp"} />
+        <meta
+          property="twitter:url"
+          content={`${process.env.NEXT_PUBLIC_SITE_URL}/datascience`}
+        />
+      </Head>
       <HeroSection2
         title={"Data science"}
         content={

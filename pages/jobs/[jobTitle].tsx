@@ -9,6 +9,7 @@ import "react-phone-input-2/lib/style.css";
 import Image from "next/image";
 import upload from "../../public/assets/upload.png";
 import Loader from "../../components/Loader";
+import Head from "next/head";
 
 interface formData {
   fullName: string;
@@ -18,16 +19,16 @@ interface formData {
   file: null | File;
 }
 
-const Jobs = ({ data }: { data: any }) => {
+const Jobs = ({ data}: any ) => {
   const [loading, setLoading] = useState(false);
 
   const fileTypes = [
-    ".doc",
-    ".docx",
+    ".msword",
     ".pdf",
     ".rtf",
     ".vnd.openxmlformats-officedocument.wordprocessingml.document",
   ];
+
   const form = useRef<HTMLFormElement | null>(null);
   const [contactFormData, setContactFormData] = useState<formData>({
     fullName: "",
@@ -103,17 +104,22 @@ const Jobs = ({ data }: { data: any }) => {
 
         const { data: hygraphRec } = await client.mutate({
           mutation: gql`
-            mutation {
+            mutation (
+              $jobTitle: String
+              $fullName: String
+              $email: String
+              $phone: String
+              $description: String
+              $cvId: ID
+            ) {
               createJobApplication(
                 data: {
-                  jobTitle: "${data.jobTitle}",
-                  fullName: "${contactFormData.fullName}",
-                  email: "${contactFormData.email}",
-                  phone: "${contactFormData.phone}",
-                  description: "${contactFormData.message}",
-                  cv: {connect: {
-                    id:"${res.id}"
-                  }},
+                  jobTitle: $jobTitle
+                  fullName: $fullName
+                  email: $email
+                  phone: $phone
+                  description: $description
+                  cv: { connect: { id: $cvId } }
                 }
               ) {
                 id
@@ -126,6 +132,14 @@ const Jobs = ({ data }: { data: any }) => {
               }
             }
           `,
+          variables: {
+            jobTitle: `${data.jobTitle}`,
+            fullName: `${contactFormData.fullName}`,
+            email: `${contactFormData.email}`,
+            phone: `${contactFormData.phone}`,
+            cvId: `${res.id}`,
+            description : `${contactFormData.message}`
+          },
         });
 
         // Passing the data, including the CV URL given by hygraph, to our email API.
@@ -162,20 +176,38 @@ const Jobs = ({ data }: { data: any }) => {
       } catch (err) {
         setLoading(false);
         toast.error("Something went wrong. Please try again later.");
-        console.log(err);
+        // console.log(err);
       }
-
-      // .then((res) => res.json())
-      // .then((data) => console.log(JSON.stringify(data, null, 2)))
-      // .catch((err) => console.log(err));
-
-      // console.log(data2);
     }
   }
 
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="relative pb-2 mt-28">
+       <Head>
+        <title>{data?.jobTitle}</title>
+        <link
+          rel="canonical"
+          href={`${process.env.NEXT_PUBLIC_SITE_URL}/jobs/`}
+        />
+        {/* OG Tags */}
+        <meta property="og:title" content={data?.jobTitle} />
+        <meta
+          property="og:url"
+          content={`${process.env.NEXT_PUBLIC_SITE_URL}/jobs/${data?.slug}`}
+        />
+        {/* <meta property="og:image" content={data.image.url ?? ""} /> */}
+        <meta property="og:type" content="Jobs" />
+        <meta property="og:description" content={data.excerpt} />
+        <meta name="twitter:card" content="summary" />
+        <meta property="twitter:title" content={data?.jobTitle} />
+        <meta property="twitter:description" content={data.excerpt} />
+        <meta
+          property="twitter:url"
+          content={`${process.env.NEXT_PUBLIC_SITE_URL}/jobs/${data.slug}`}
+        />
+        {/* <meta property="twitter:image" content={data.image.url ?? ""} /> */}
+        </Head>
       {loading && <Loader />}
       <div className="" />
       <Toaster />

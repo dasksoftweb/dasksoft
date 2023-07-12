@@ -10,6 +10,7 @@ import {
   ShieldCheckIcon
 } from "@heroicons/react/24/solid";
 import Link from "next/link";
+import Head from "next/dist/shared/lib/head";
 
 const cloudc = () => {
   const features = [
@@ -59,6 +60,35 @@ const cloudc = () => {
 
   return (
     <div className="">
+       <Head>
+            <title>{'Dasksoft - Cloud Computing'}</title>
+            <link
+              rel="canonical"
+              href={`${process.env.NEXT_PUBLIC_SITE_URL}/cloudc`}
+            />
+           
+            {/* OG Tags */}
+            <meta property="og:type" content="Home" />
+            <meta property="og:title" content={"Dasksoft - Cloud Computing"} />
+            <meta property="og:description" content={"Cloud computing is a technology that enables users to access and use computing resources, such as servers, storage, and software applications, over the internet. It provides a flexible, scalable, and cost-effective way to deliver computing services to individuals and organizations."} />
+            <meta property="og:image" content={"../public/cloudcompuweb.webp"} />
+            <meta
+              property="og:url"
+              content={`${process.env.NEXT_PUBLIC_SITE_URL}/cloudc`}
+            />
+
+           
+            <meta name="twitter:card" content="summary" />
+            <meta property="twitter:title" content={"Dasksoft - Cloud Computing"} />
+            <meta property="twitter:description" content={'Cloud computing is a technology that enables users to access and use computing resources, such as servers, storage, and software applications, over the internet. It provides a flexible, scalable, and cost-effective way to deliver computing services to individuals and organizations.'} />
+            <meta property="twitter:image" content={"../public/cloudcompuweb.webp"} />
+            <meta
+              property="twitter:url"
+              content={`${process.env.NEXT_PUBLIC_SITE_URL}/cloudc`}
+            />
+
+            
+          </Head>
       <HeroSection2
         title={"Cloud Computing"}
         content={

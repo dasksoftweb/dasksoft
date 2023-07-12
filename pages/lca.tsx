@@ -1,5 +1,4 @@
 import { gql } from "@apollo/client";
-import { RichText } from "@graphcms/rich-text-react-renderer";
 import React, { useEffect, useState } from "react";
 import client from "../apolloClient";
 import LcaAccordion from "../components/LcaAccordion";
@@ -41,6 +40,7 @@ const Lca = () => {
 
   return (
     <div>
+      
       <div className="min-h-screen mt-28 md:mt-32 max-w-7xl mx-auto px-5">
         <div className="pb-8 border-b">
           <h2 className="text-lg md:text-4xl font-bold pb-4 md:pb-8">

@@ -14,7 +14,7 @@ import {
 
 import img from "../public/sdlcweb.webp"
 import Link from "next/link";
-
+import Head from "next/dist/shared/lib/head";
 const sdlc = () => {
   const features = [
     {
@@ -63,6 +63,31 @@ const sdlc = () => {
 
   return (
     <div className="">
+       <Head>
+        <title>{'Dasksoft - Software Development Life Cycle'}</title>
+        <link
+          rel="canonical"
+          href={`${process.env.NEXT_PUBLIC_SITE_URL}/sdlc`}
+        />
+        {/* OG Tags */}
+        <meta property="og:type" content="Home" />
+        <meta property="og:title" content={"Dasksoft - Software Development Life Cycle"} />
+        <meta property="og:description" content={"The Systems and Software Development Life Cycle (SDLC) is a methodology used by software developers and engineers to plan, design, develop, test, and deploy software systems. It provides a structured approach to software development that helps ensure the successful delivery of high-quality software that meets the needs of users and stakeholders"} />
+        <meta property="og:image" content={"../public/sdlcweb.webp"} />
+        <meta
+          property="og:url"
+          content={`${process.env.NEXT_PUBLIC_SITE_URL}/sdlc`}
+        />
+         {/*Twitter */}
+        <meta name="twitter:card" content="summary" />
+        <meta property="twitter:title" content={"Dasksoft - Software Development Life Cycle"} />
+        <meta property="twitter:description" content={'The Systems and Software Development Life Cycle (SDLC) is a methodology used by software developers and engineers to plan, design, develop, test, and deploy software systems. It provides a structured approach to software development that helps ensure the successful delivery of high-quality software that meets the needs of users and stakeholders'} />
+        <meta property="twitter:image" content={"../public/sdlcweb.webp"} />
+        <meta
+          property="twitter:url"
+          content={`${process.env.NEXT_PUBLIC_SITE_URL}/sdlc`}
+        />
+      </Head>
       <HeroSection2
         title={"Software Development Life Cycle"}
         content={

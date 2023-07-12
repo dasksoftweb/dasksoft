@@ -31,15 +31,35 @@ export default function App({ Component, pageProps }: AppProps) {
     <div className={rubik.className}>
       <Layout>
         <ScrollToTop>
+
           <Head>
-            <title>
-              Dasksoft - Building teams that are redefining the future
-            </title>
-            <meta
-              name="description"
-              content="Building teams that are redefining the future"
+            <title>{'Dasksoft - Building teams that are redefining the future'}</title>
+            <link
+              rel="canonical"
+              href={`${process.env.NEXT_PUBLIC_SITE_URL}/`}
             />
             <link rel="icon" href="/favicon.png" />
+            {/* OG Tags */}
+            <meta property="og:type" content="Home" />
+            <meta property="og:title" content={"Dasksoft - Building teams that are redefining the future"} />
+            <meta property="og:description" content={"Building teams that are redefining the future"} />
+            <meta property="og:image" content={""} />
+            <meta
+              property="og:url"
+              content={`${process.env.NEXT_PUBLIC_SITE_URL}/`}
+            />
+
+           
+            <meta name="twitter:card" content="summary" />
+            <meta property="twitter:title" content={"Dasksoft - Building teams that are redefining the future"} />
+            <meta property="twitter:description" content={'Building teams that are redefining the future'} />
+            <meta property="twitter:image" content={""} />
+            <meta
+              property="twitter:url"
+              content={`${process.env.NEXT_PUBLIC_SITE_URL}/`}
+            />
+
+            
           </Head>
           {loading && <Loader />}
           <Component {...pageProps} />

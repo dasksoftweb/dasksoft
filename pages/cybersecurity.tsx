@@ -6,12 +6,11 @@ import {
   CloudIcon,
   CpuChipIcon,
   GlobeAltIcon,
-  SignalIcon,
   ChatBubbleLeftRightIcon
 } from "@heroicons/react/24/solid";
 import img from "../public/cybersecuweb.webp"
 import Link from "next/link";
-
+import Head from "next/dist/shared/lib/head";
 const cybersecurity = () => {
   const features2 = [
     {
@@ -54,6 +53,32 @@ const cybersecurity = () => {
 
   return (
     <div className="">
+
+      <Head>
+        <title>{'Dasksoft - Cyber Security'}</title>
+        <link
+          rel="canonical"
+          href={`${process.env.NEXT_PUBLIC_SITE_URL}/cybersecurity`}
+        />
+        {/* OG Tags */}
+        <meta property="og:type" content="Home" />
+        <meta property="og:title" content={"Dasksoft - Cyber Security"} />
+        <meta property="og:description" content={"Cybersecurity is the practice of protecting computer systems, networks, and data from unauthorized access, theft, damage, and other cyber threats. Cybersecurity is essential for protecting individuals, organizations, and governments from cybercrime, cyber espionage, and cyber terrorism."} />
+        <meta property="og:image" content={"../public/cybersecuweb.webp"} />
+        <meta
+          property="og:url"
+          content={`${process.env.NEXT_PUBLIC_SITE_URL}/cybersecurity`}
+        />
+         {/*Twitter */}
+        <meta name="twitter:card" content="summary" />
+        <meta property="twitter:title" content={"Dasksoft - Cyber Security"} />
+        <meta property="twitter:description" content={'Cybersecurity is the practice of protecting computer systems, networks, and data from unauthorized access, theft, damage, and other cyber threats. Cybersecurity is essential for protecting individuals, organizations, and governments from cybercrime, cyber espionage, and cyber terrorism.'} />
+        <meta property="twitter:image" content={"../public/cybersecuweb.webp"} />
+        <meta
+          property="twitter:url"
+          content={`${process.env.NEXT_PUBLIC_SITE_URL}/cybersecurity`}
+        />
+      </Head>
       <HeroSection2
         title={"Cyber Security"}
         content={
@@ -93,11 +118,11 @@ const cybersecurity = () => {
         </div>
       </div>
       {/* section2 start */}
-       <div className="bg-primary ">
+      <div className="bg-primary ">
         <div className="max-w-2xl mx-auto text-center py-14 px-4  sm:px-6 lg:px-8">
-          
+
           <p className="mt-4 text-lg leading-6 text-white">
-          Protecting your organizations digital assets from cyber attacks is crucial in todays world. Dasksoft expert cyber security team can help you assess and mitigate the risks to your business. Our team of certified professionals can work with you to develop a comprehensive security plan tailored to your specific needs.
+            Protecting your organizations digital assets from cyber attacks is crucial in todays world. Dasksoft expert cyber security team can help you assess and mitigate the risks to your business. Our team of certified professionals can work with you to develop a comprehensive security plan tailored to your specific needs.
           </p>
           <Link
             href="/#contact"
