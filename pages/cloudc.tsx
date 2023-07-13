@@ -70,7 +70,7 @@ const cloudc = () => {
             {/* OG Tags */}
             <meta property="og:type" content="Home" />
             <meta property="og:title" content={"Dasksoft - Cloud Computing"} />
-            <meta property="og:description" content={"Cloud computing is a technology that enables users to access and use computing resources, such as servers, storage, and software applications, over the internet. It provides a flexible, scalable, and cost-effective way to deliver computing services to individuals and organizations."} />
+            <meta property="og:description" content={"Dasksoft expert resources in Cloud Computing can help you easily move your business to the cloud. Dasksoft's team of professionals will assess your business requirements and guide you through the process of selecting the right cloud services that best suit your needs."} />
             <meta property="og:image" content={"../public/cloudcompuweb.webp"} />
             <meta
               property="og:url"
@@ -80,7 +80,7 @@ const cloudc = () => {
            
             <meta name="twitter:card" content="summary" />
             <meta property="twitter:title" content={"Dasksoft - Cloud Computing"} />
-            <meta property="twitter:description" content={'Cloud computing is a technology that enables users to access and use computing resources, such as servers, storage, and software applications, over the internet. It provides a flexible, scalable, and cost-effective way to deliver computing services to individuals and organizations.'} />
+            <meta property="twitter:description" content={"Dasksoft expert resources in Cloud Computing can help you easily move your business to the cloud. Dasksoft's team of professionals will assess your business requirements and guide you through the process of selecting the right cloud services that best suit your needs."} />
             <meta property="twitter:image" content={"../public/cloudcompuweb.webp"} />
             <meta
               property="twitter:url"

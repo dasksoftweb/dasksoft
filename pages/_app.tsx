@@ -1,7 +1,6 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { Rubik } from "@next/font/google";
-import Navbar from "../components/Navbar";
 import { useState } from "react";
 import Router from "next/router";
 import NProgress from "nprogress";
@@ -42,7 +41,7 @@ export default function App({ Component, pageProps }: AppProps) {
             {/* OG Tags */}
             <meta property="og:type" content="Home" />
             <meta property="og:title" content={"Dasksoft - Building teams that are redefining the future"} />
-            <meta property="og:description" content={"Building teams that are redefining the future"} />
+            <meta property="og:description" content={"Dasksoft provides an unmatched talent pool of tech consultants on-demand to improve efficiency, and scale your organization based on your exact needs."} />
             <meta property="og:image" content={""} />
             <meta
               property="og:url"
@@ -51,7 +50,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
            
             <meta name="twitter:card" content="summary" />
-            <meta property="twitter:title" content={"Dasksoft - Building teams that are redefining the future"} />
+            <meta property="twitter:title" content={"Dasksoft - Dasksoft provides an unmatched talent pool of tech consultants on-demand to improve efficiency, and scale your organization based on your exact needs."} />
             <meta property="twitter:description" content={'Building teams that are redefining the future'} />
             <meta property="twitter:image" content={""} />
             <meta

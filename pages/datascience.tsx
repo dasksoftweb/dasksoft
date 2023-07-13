@@ -82,7 +82,7 @@ const cloudsecurity = () => {
         {/* OG Tags */}
         <meta property="og:type" content="Home" />
         <meta property="og:title" content={"Dasksoft - Data Science"} />
-        <meta property="og:description" content={"Data science is a multidisciplinary field that involves the use of statistical and computational methods to extract insights and knowledge from data. Data science is used to solve complex problems, make data-driven decisions, and drive innovation in a wide range of industries, including finance, healthcare, marketing, and technology."} />
+        <meta property="og:description" content={"Unlock the power of your data with Dasksoft expert data science solutions. Dasksoft's highly skilled data scientists combine cutting-edge technology and specialized expertise to extract meaningful insights from your data. Dasksoft uses advanced analytics, AI, and machine learning to help you make informed decisions and gain a competitive edge."} />
         <meta property="og:image" content={"../public/datascienceweb.webp"} />
         <meta
           property="og:url"
@@ -91,7 +91,7 @@ const cloudsecurity = () => {
          {/*Twitter */}
         <meta name="twitter:card" content="summary" />
         <meta property="twitter:title" content={"Dasksoft - Data Science"} />
-        <meta property="twitter:description" content={'Data science is a multidisciplinary field that involves the use of statistical and computational methods to extract insights and knowledge from data. Data science is used to solve complex problems, make data-driven decisions, and drive innovation in a wide range of industries, including finance, healthcare, marketing, and technology.'} />
+        <meta property="twitter:description" content={"Unlock the power of your data with Dasksoft expert data science solutions. Dasksoft's highly skilled data scientists combine cutting-edge technology and specialized expertise to extract meaningful insights from your data. Dasksoft uses advanced analytics, AI, and machine learning to help you make informed decisions and gain a competitive edge."} />
         <meta property="twitter:image" content={"../public/datascienceweb.webp"} />
         <meta
           property="twitter:url"

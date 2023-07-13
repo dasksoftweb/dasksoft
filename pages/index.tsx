@@ -43,7 +43,7 @@ export default function Home() {
         />
          {/*Twitter */}
         <meta name="twitter:card" content="summary" />
-        <meta property="twitter:title" content={"Dasksoft - Labor Condition Applications"} />
+        <meta property="twitter:title" content={"Dasksoft -  Building teams that are redefining the future"} />
         <meta property="twitter:description" content={'Building teams that are redefining the future'} />
         <meta property="twitter:image" content={"../public/logo.png"} />
         <meta

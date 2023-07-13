@@ -63,7 +63,7 @@ const cybersecurity = () => {
         {/* OG Tags */}
         <meta property="og:type" content="Home" />
         <meta property="og:title" content={"Dasksoft - Cyber Security"} />
-        <meta property="og:description" content={"Cybersecurity is the practice of protecting computer systems, networks, and data from unauthorized access, theft, damage, and other cyber threats. Cybersecurity is essential for protecting individuals, organizations, and governments from cybercrime, cyber espionage, and cyber terrorism."} />
+        <meta property="og:description" content={"Protecting your organizations digital assets from cyber attacks is crucial in todays world. Dasksoft expert cyber security team can help you assess and mitigate the risks to your business. Dasksoft's team of certified professionals can work with you to develop a comprehensive security plan tailored to your specific needs."} />
         <meta property="og:image" content={"../public/cybersecuweb.webp"} />
         <meta
           property="og:url"
@@ -72,7 +72,7 @@ const cybersecurity = () => {
          {/*Twitter */}
         <meta name="twitter:card" content="summary" />
         <meta property="twitter:title" content={"Dasksoft - Cyber Security"} />
-        <meta property="twitter:description" content={'Cybersecurity is the practice of protecting computer systems, networks, and data from unauthorized access, theft, damage, and other cyber threats. Cybersecurity is essential for protecting individuals, organizations, and governments from cybercrime, cyber espionage, and cyber terrorism.'} />
+        <meta property="twitter:description" content={"Protecting your organizations digital assets from cyber attacks is crucial in todays world. Dasksoft expert cyber security team can help you assess and mitigate the risks to your business. Dasksoft's team of certified professionals can work with you to develop a comprehensive security plan tailored to your specific needs."} />
         <meta property="twitter:image" content={"../public/cybersecuweb.webp"} />
         <meta
           property="twitter:url"

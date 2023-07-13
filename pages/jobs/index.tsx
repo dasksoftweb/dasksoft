@@ -38,7 +38,7 @@ const Jobs = ({ data }: { data: jobs }) => {
   return (
     <div className="relative mx-auto sm:w-full w-full pb-4">
       <Head>
-        <title>{'DaskSoft - Job.'}</title>
+        <title>{'Dasksoft - Careers'}</title>
         <link
           rel="DaskSoft"
           href={`/jobs`}
@@ -46,7 +46,7 @@ const Jobs = ({ data }: { data: jobs }) => {
         <meta
           name="description"
           content={
-            "Over the years, we've built a culture of service, teamwork, and innovation. With an exceptional staff we are proud that people choose to build their careers with us."
+            "We believe that people are the heart and soul of what we do. Look at the available job openings you can apply for"
           }
         />
       </Head>

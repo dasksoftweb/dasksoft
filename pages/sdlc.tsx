@@ -72,7 +72,7 @@ const sdlc = () => {
         {/* OG Tags */}
         <meta property="og:type" content="Home" />
         <meta property="og:title" content={"Dasksoft - Software Development Life Cycle"} />
-        <meta property="og:description" content={"The Systems and Software Development Life Cycle (SDLC) is a methodology used by software developers and engineers to plan, design, develop, test, and deploy software systems. It provides a structured approach to software development that helps ensure the successful delivery of high-quality software that meets the needs of users and stakeholders"} />
+        <meta property="og:description" content={"Transform your software development process with Dasksoft expert resources in Software Development Life Cycle. Our team of skilled professionals follow a structured approach to ensure that your software project is developed, maintained, and enhanced to meet your specific needs."} />
         <meta property="og:image" content={"../public/sdlcweb.webp"} />
         <meta
           property="og:url"
@@ -81,7 +81,7 @@ const sdlc = () => {
          {/*Twitter */}
         <meta name="twitter:card" content="summary" />
         <meta property="twitter:title" content={"Dasksoft - Software Development Life Cycle"} />
-        <meta property="twitter:description" content={'The Systems and Software Development Life Cycle (SDLC) is a methodology used by software developers and engineers to plan, design, develop, test, and deploy software systems. It provides a structured approach to software development that helps ensure the successful delivery of high-quality software that meets the needs of users and stakeholders'} />
+        <meta property="twitter:description" content={'Transform your software development process with Dasksoft expert resources in Software Development Life Cycle. Our team of skilled professionals follow a structured approach to ensure that your software project is developed, maintained, and enhanced to meet your specific needs.'} />
         <meta property="twitter:image" content={"../public/sdlcweb.webp"} />
         <meta
           property="twitter:url"
