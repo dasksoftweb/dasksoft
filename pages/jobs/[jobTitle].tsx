@@ -163,11 +163,11 @@ const Jobs = ({ data}: {data:IJob} ) => {
           },
           body: JSON.stringify({
             title: data.jobTitle,
-            email: contactFormData.email,
-            name: contactFormData.fullName,
-            phone: contactFormData.phone,
-            desc: contactFormData.message,
-            cvUrl: hygraphRec.createJobApplication.cv.url,
+            email: contactFormData?.email,
+            name: contactFormData?.fullName,
+            phone: contactFormData?.phone,
+            desc: contactFormData?.message,
+            cvUrl: hygraphRec?.createJobApplication.cv.url,
           }),
         });
 
@@ -230,7 +230,7 @@ const Jobs = ({ data}: {data:IJob} ) => {
               {" "}
               <span className="underline underline-offset-2">
                 {" "}
-                {data.jobTitle}
+                {data?.jobTitle}
               </span>
             </span>
           </h4>
@@ -245,7 +245,7 @@ const Jobs = ({ data}: {data:IJob} ) => {
                 type="text"
                 className="hidden"
                 name="Position"
-                value={data.jobTitle}
+                value={data?.jobTitle}
                 onChange={() => null}
               />
               <label htmlFor="full-name" className="">
@@ -447,7 +447,7 @@ const Jobs = ({ data}: {data:IJob} ) => {
             <div className="md:flex items-center justify-between lg:flex-row px-6 lg:pl-10 sm:pr-8 border-b-2 py-4 border-gray-300">
               <div className="">
                 <h3 className="text-xl font-bold text-gray-900">
-                  {data.jobTitle}
+                  {data?.jobTitle}
                 </h3>
                 <div className="flex items-center gap-2 text-lg text-gray-500 py-1 mt-2 ">
                   <svg
@@ -470,7 +470,7 @@ const Jobs = ({ data}: {data:IJob} ) => {
                     />
                   </svg>
 
-                  <div>{data.projectLocations}</div>
+                  <div>{data?.projectLocations}</div>
                 </div>
               </div>
               <div>
@@ -487,14 +487,14 @@ const Jobs = ({ data}: {data:IJob} ) => {
             {/* Job Details */}
             <div className="grid px-6 lg:px-10 py-6 space-y-4">
               {/* about company */}
-              {data.aboutTheCompany && (
+              {data?.aboutTheCompany && (
                 <div className="space-y-2">
                   <div className="">
                     <h2 className="font-bold text-lg md:text-xl ">
                       About The Company
                     </h2>
                   </div>
-                  <div className="prose prose-teal">{data.aboutTheCompany}</div>
+                  <div className="prose prose-teal">{data?.aboutTheCompany}</div>
                 </div>
               )}
 
@@ -508,12 +508,12 @@ const Jobs = ({ data}: {data:IJob} ) => {
                     </h2>
                   </div>
                   <div className="prose prose-teal">
-                    <RichText content={data.description.raw.children} />
+                    <RichText content={data?.description?.raw?.children} />
                   </div>
                 </div>
               )}
 
-              {data.jobResponsibilities && (
+              {data?.jobResponsibilities && (
                 <div className="space-y-2">
                   <div className="">
                     <h2 className="font-bold text-lg md:text-xl  mt-2">
@@ -521,23 +521,23 @@ const Jobs = ({ data}: {data:IJob} ) => {
                     </h2>
                   </div>
                   <div className="prose prose-teal">
-                    <RichText content={data.jobResponsibilities.raw.children} />
+                    <RichText content={data?.jobResponsibilities?.raw?.children} />
                   </div>
                 </div>
               )}
               {/* qualification */}
-              {data.education && (
+              {data?.education && (
                 <div className="space-y-2">
                   <p className="text-lg md:text-xl font-bold mt-2">
                     Educational Qualification
                   </p>
                   <div className="flex items-center gap-2">
-                    <h2 className="text-lg ">{data.education}</h2>
+                    <h2 className="text-lg ">{data?.education}</h2>
                   </div>
                 </div>
               )}
               {/* Skills & Experience */}
-              {data.skillsExperience && (
+              {data?.skillsExperience && (
                 <div className="space-y-2">
                   <div className="">
                     <h2 className="font-bold text-lg md:text-xl  mt-2 ">
@@ -545,7 +545,7 @@ const Jobs = ({ data}: {data:IJob} ) => {
                     </h2>
                   </div>
                   <div className="prose prose-teal ">
-                    <RichText content={data.skillsExperience.raw.children} />
+                    <RichText content={data?.skillsExperience?.raw?.children} />
                   </div>
                 </div>
               )}
