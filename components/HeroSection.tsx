@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Banner from "../public/assets/banner.jpg";
+import Banner from "../public/assets/banner.webp";
 
 export default function HeroSection() {
   return (

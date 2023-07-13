@@ -489,7 +489,7 @@ const Jobs = ({ data}: any ) => {
 
               {/* Job Summary */}
 
-              {data.description.text && (
+              {data?.description?.text && (
                 <div className="space-y-2">
                   <div className="">
                     <h2 className="font-bold text-lg md:text-xl mt-2">

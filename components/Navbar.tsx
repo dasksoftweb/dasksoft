@@ -12,7 +12,7 @@ const navigation = [
 ];
 
 const Navbar = () => {
-  const router = useRouter();
+  
   const [isOpen, setIsOpen] = useState(false);
 
   return (

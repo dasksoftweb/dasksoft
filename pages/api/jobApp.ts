@@ -31,7 +31,7 @@ export default async function handler(
   });
   const mailData = {
     from: process.env.MAIL_USER,
-    to: "info@dasksoft.com",
+    to: "shubhamsurve704@gmail.com",
     subject: `Job Application for ${req.body.title}`,
     html: `<p>Hello</p>
     <p>${req.body.name} has applied for the position of ${req.body.title}.</p>

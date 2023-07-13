@@ -40,7 +40,7 @@ export default async function handler(
   // Configuring Mail Data
   const mailData = {
     from: process.env.MAIL_USER,
-    to: "info@dasksoft.com",
+    to: "shubhamsurve704@gmail.com",
     subject: `Inquiry from ${req.body.firstName + " " + req.body.lastName}`,
     html: `<p>Hello</p>
     <p>${
