@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import loader from "../public/assets/loder.gif";
 import { Watch } from "react-loader-spinner";
 const Loader = () => {
   return (
