@@ -19,7 +19,18 @@ interface formData {
   file: null | File;
 }
 
-const Jobs = ({ data}: any ) => {
+interface IJob {
+  jobTitle: string;
+  aboutTheCompany: string;
+  description: any;
+  jobResponsibilities: any;
+  projectLocations: string;
+  education: string;
+  skillsExperience: any;
+  slug:string;
+}
+
+const Jobs = ({ data}: {data:IJob} ) => {
   const [loading, setLoading] = useState(false);
 
   const fileTypes = [
@@ -198,10 +209,10 @@ const Jobs = ({ data}: any ) => {
         />
         {/* <meta property="og:image" content={data.image.url ?? ""} /> */}
         <meta property="og:type" content="Jobs" />
-        <meta property="og:description" content={data.excerpt} />
+        <meta property="og:description" content={data.description} />
         <meta name="twitter:card" content="summary" />
         <meta property="twitter:title" content={data?.jobTitle} />
-        <meta property="twitter:description" content={data.excerpt} />
+        <meta property="twitter:description" content={data.description} />
         <meta
           property="twitter:url"
           content={`${process.env.NEXT_PUBLIC_SITE_URL}/jobs/${data.slug}`}
@@ -571,8 +582,7 @@ export async function getServerSideProps({ params }: { params: any }) {
         createdAt
       }
     }
-    
-        `,
+   `,
   });
 
   if (!dataails.jobListings.length) {
