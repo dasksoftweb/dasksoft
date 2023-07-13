@@ -26,6 +26,31 @@ export default function Home() {
   }, [query]);
   return (
     <div className="">
+         <Head>
+        <title>{'Dasksoft - Building teams that are redefining the future'}</title>
+        <link
+          rel="canonical"
+          href={`${process.env.NEXT_PUBLIC_SITE_URL}/`}
+        />
+        {/* OG Tags */}
+        <meta property="og:type" content="Home" />
+        <meta property="og:title" content={"Dasksoft - Building teams that are redefining the future"} />
+        <meta property="og:description" content={"Building teams that are redefining the future"} />
+        <meta property="og:image" content={"../public/logo.png"} />
+        <meta
+          property="og:url"
+          content={`${process.env.NEXT_PUBLIC_SITE_URL}/`}
+        />
+         {/*Twitter */}
+        <meta name="twitter:card" content="summary" />
+        <meta property="twitter:title" content={"Dasksoft - Labor Condition Applications"} />
+        <meta property="twitter:description" content={'Building teams that are redefining the future'} />
+        <meta property="twitter:image" content={"../public/logo.png"} />
+        <meta
+          property="twitter:url"
+          content={`${process.env.NEXT_PUBLIC_SITE_URL}/`}
+        />
+      </Head>
       <div>
         <HeroSection />
         <Features />
