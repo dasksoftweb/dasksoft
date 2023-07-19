@@ -35,7 +35,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <title>{'Dasksoft - Building teams that are redefining the future'}</title>
             <link
               rel="canonical"
-              href={`${process.env.NEXT_PUBLIC_SITE_URL}/`}
+              href={`https://www.dasksoft.com/`}
             />
             <link rel="icon" href="/favicon.png" />
             {/* OG Tags */}
@@ -45,7 +45,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <meta property="og:image" content={""} />
             <meta
               property="og:url"
-              content={`${process.env.NEXT_PUBLIC_SITE_URL}/`}
+              content={`https://www.dasksoft.com/`}
             />
 
            
@@ -55,7 +55,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <meta property="twitter:image" content={""} />
             <meta
               property="twitter:url"
-              content={`${process.env.NEXT_PUBLIC_SITE_URL}/`}
+              content={`https://www.dasksoft.com/`}
             />
 
             

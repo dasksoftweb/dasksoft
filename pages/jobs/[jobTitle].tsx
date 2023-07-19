@@ -187,7 +187,7 @@ const Jobs = ({ data}: {data:IJob} ) => {
       } catch (err) {
         setLoading(false);
         toast.error("Something went wrong. Please try again later.");
-        // console.log(err);
+        
       }
     }
   }
@@ -199,13 +199,13 @@ const Jobs = ({ data}: {data:IJob} ) => {
         <title>{data?.jobTitle}</title>
         <link
           rel="canonical"
-          href={`${process.env.NEXT_PUBLIC_SITE_URL}/jobs/`}
+          href={`https://www.dasksoft.com/jobs`}
         />
         {/* OG Tags */}
         <meta property="og:title" content={data?.jobTitle} />
         <meta
           property="og:url"
-          content={`${process.env.NEXT_PUBLIC_SITE_URL}/jobs/${data?.slug}`}
+          content={`https://www.dasksoft.com/jobs/${data?.slug}`}
         />
         {/* <meta property="og:image" content={data.image.url ?? ""} /> */}
         <meta property="og:type" content="Jobs" />
@@ -215,7 +215,7 @@ const Jobs = ({ data}: {data:IJob} ) => {
         <meta property="twitter:description" content={data.description} />
         <meta
           property="twitter:url"
-          content={`${process.env.NEXT_PUBLIC_SITE_URL}/jobs/${data.slug}`}
+          content={`https://www.dasksoft.com/jobs/${data.slug}`}
         />
         {/* <meta property="twitter:image" content={data.image.url ?? ""} /> */}
         </Head>
